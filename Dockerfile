@@ -1,6 +1,5 @@
 FROM alpine AS builder
-RUN apk add --no-cache npm git
-RUN npm install -g node@16.13.2
+RUN apk add --no-cache nodejs npm git
 RUN npm install npm -g
 
 RUN adduser -D app
